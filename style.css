@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    width: 940px;
+    margin: 0px 25%;
+    position: absolute;
+    display: flex;
+}
+
+/** Tarefas a fazer no codigo !!!!!
+
+    - adicionar media query para criar layout mobile **/
+
+body{
+    width: 940px;
+    padding: 150px 0px;
+    font-family: 'roboto';
+    background-color: #ADACB2;
+    background-image: linear-gradient(to bottom,#A4A3A9, #A6A7AC, #A2A1A7 );
+    color: white;       
+}
+
+.maos{
+    display: inline-block;
+    position: absolute;
+    left: 189px;
+    top: 11px;
+}
+
+.maos img{
+    width: 705px;
+    height: 950px;
+    position: relative;
+    left: 425px;
+    top: 79px; 
+}
+
+
+
+.caixa-logo{
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.logo-madruga{
+   margin: 0 36%;
+}
+
+.logo-madruga img{   
+    display: inline-block;
+    width: 215px;
+    position: relative;
+    right: 58px;
+}
+
+main{
+    position: relative;
+}
+
+.texto-inicial{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 35px 0;
+    position: relative;
+}
+
+.texto-inicial p{
+    margin: 5px 0;
+}
+
+.texto-inicial :nth-child(1) {
+    margin-bottom: 25px;
+    letter-spacing: 1 px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;    
+}
+
+.texto-inicial :nth-child(1) i{
+    margin-bottom: 25px;
+    letter-spacing: 1 px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;    
+}
+
+.texto-inicial :nth-child(2){
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;      
+}
+
+.texto-inicial :nth-child(3){
+    font-size: 25px;
+    font-weight: 300;
+    margin-left: 30px;
+    letter-spacing: 1px;
+    font-style: italic;   
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 745px;
+    margin: 0 auto;
+}
+
+.cadastro input[type="email"] {
+    padding: 20px 0px;
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(40, 67, 58);
+    border-style: none;
+    width: 765px;
+    color: white;
+}
+
+.cadastro p{
+    font-size: 15px;
+}
+
+.caixa-checkbox{
+    position: relative;
+    padding: 15px 0;
+}
+
+.cadastro input[type="checkbox"] {
+    display: inline-block;
+    position: absolute;
+    left: 0;    
+}
+
+.checkbox{
+    margin:15px 0 ; 
+}
+
+.cadastro input[type="submit"] {
+    padding: 20px 0px;
+    text-align: center;
+    background-color: rgb(216, 110, 62);
+    font-weight: bold;
+    width: 765px;
+    border-style: none;
+    color: white;
+}
+
+@media (max-width: 768px){
+
+
+    
+    .maos{
+        display: none;
+    } 
+    
+    .logo-madruga img{
+        width: 300px;
+        right: 50px;
+    }
+
+    .texto-inicial :nth-child(1) {
+        font-size: 56px;
+        
+    }
+
+    .texto-inicial :nth-child(1) i{
+        font-size: 40px;
+    }
+
+    .texto-inicial :nth-child(2){
+        font-size: 42px;
+        width: 663px;
+        padding-top: 35px;
+        margin-left: 148px;  
+    }
+
+    .texto-inicial :nth-child(3){
+        font-size: 30px ;
+    }  
+
+    .cadastro {
+        width: 730px;
+        padding-top: 30px;
+    }
+
+    .cadastro input[type="email"]{
+        padding: 15px 0px;
+        font-size: 30px;
+        text-align: center;
+        background-color: rgb(40, 67, 58);
+        border-style: none;
+        width: 730px;
+        color: white;
+        order: 1;
+    }
+    
+    .cadastro input[type="submit"]{
+        padding: 15px 0px;
+        margin: 20px 0;
+        font-size: 30px;
+        font-weight: bold;
+        width: 730px;
+        order: 2;
+    }
+
+    .caixa-checkbox{
+        order: 3;
+    }
+
+    .caixa-checkbox p{
+        font-size: 19px;
+        text-align:left;
+        margin-left: 22px;
+    }
+
+    body{
+        background-image: url(./assets/dedos.jpg);
+        background-size: 577px;
+        background-repeat: no-repeat;
+        background-position: 467px 1100px;
+    }
+}   
+    
